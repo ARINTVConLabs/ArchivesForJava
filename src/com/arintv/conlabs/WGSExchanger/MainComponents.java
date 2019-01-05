@@ -13,7 +13,7 @@ public class MainComponents extends JFrame {
     JComboBox<String> getConvertType;
     JButton Convert;
 
-    public JPanel MainComponet() {
+    public JPanel MainComponent() {
         JPanel ContentPanel = new JPanel();
         ContentPanel.setLayout(new BorderLayout());
 
@@ -138,7 +138,8 @@ public class MainComponents extends JFrame {
 
         Convert = new JButton("Calculate Distances");
 
-        Convert.addActionListener(new ConvertActionListener(WGS84_Start_Latitude, WGS84_Start_Longitude, WGS84_End_Latitude, WGS84_End_Longitude, getConvertType, this));
+        Convert.addActionListener(new ConvertActionListener(WGS84_Start_Latitude, WGS84_Start_Longitude,
+                WGS84_End_Latitude, WGS84_End_Longitude, getConvertType, this));
 
         panel.add(Convert, BorderLayout.CENTER);
 

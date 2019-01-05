@@ -9,7 +9,7 @@ public class MainUIThread extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         MainComponents mainComponents = new MainComponents();
-        setContentPane(mainComponents.MainComponet());
+        setContentPane(mainComponents.MainComponent());
 
         setJMenuBar(mainComponents.ProgramMenu());
 

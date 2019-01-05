@@ -11,7 +11,9 @@ public class ConvertActionListener implements ActionListener {
     JComboBox getConvertType;
     JFrame UI;
 
-    public ConvertActionListener(JTextField wgs84_start_latitude, JTextField wgs84_start_longitude, JTextField wgs84_end_latitude, JTextField wgs84_end_longitude, JComboBox<String> getConvertType, JFrame UI) {
+    public ConvertActionListener(JTextField wgs84_start_latitude, JTextField wgs84_start_longitude,
+                                 JTextField wgs84_end_latitude, JTextField wgs84_end_longitude,
+                                 JComboBox<String> getConvertType, JFrame UI) {
         StartLatitude = wgs84_start_latitude;
         StartLongitude = wgs84_start_longitude;
         EndLatitude = wgs84_end_latitude;
@@ -32,7 +34,8 @@ public class ConvertActionListener implements ActionListener {
                 double ELongi = Double.parseDouble(EndLongitude.getText());
                 String ConvertType = getConvertType.getSelectedItem().toString();
 
-                ConvertDialog convertDialog = new ConvertDialog(UI, "Result", true, SLati, SLongi, ELati, ELongi, ConvertType, UI);
+                ConvertDialog convertDialog = new ConvertDialog(UI, "Result", true,
+                        SLati, SLongi, ELati, ELongi, ConvertType, UI);
                 convertDialog.setVisible(true);
 
             } catch (NumberFormatException ex) {

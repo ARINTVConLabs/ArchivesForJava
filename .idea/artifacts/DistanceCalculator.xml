@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="DistanceCalculator">
+    <output-path>$PROJECT_DIR$/out/artifacts/DistanceCalculator</output-path>
+    <root id="archive" name="ArchivesForJava.jar">
+      <element id="module-output" name="ArchivesForJava" />
+    </root>
+  </artifact>
+</component>

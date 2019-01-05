@@ -11,7 +11,8 @@ public class ConvertDialog extends JDialog {
     String ConvertType;
     JFrame UI;
 
-    public ConvertDialog(Frame owner, String title, boolean modal, double SLati, double SLongi, double ELati, double ELongi, String ConvertType, JFrame UI) {
+    public ConvertDialog(Frame owner, String title, boolean modal, double SLati,
+                         double SLongi, double ELati, double ELongi, String ConvertType, JFrame UI) {
         super(owner, title, modal);
         this.SLati = SLati;
         this.SLongi = SLongi;
